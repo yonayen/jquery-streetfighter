@@ -4,6 +4,10 @@ $(document).ready(function() {
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
 	});
+	$('.ryu').on("mouseleave", function() {
+		$('.ryu-still').show();
+		$('.ryu-ready').hide();
+	});
 	$('.volume-control').on("click", function() {
 		$('.volume-control').toggleClass("fa-volume-up fa-volume-off")
 	})
