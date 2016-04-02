@@ -10,6 +10,7 @@ $(document).ready(function() {
 	});
 	$('.ryu').on("mousedown", function() {
 		// console.log('mousedown');
+		playHadouken();
 		$('.ryu-throwing').show();
 		$('.ryu-ready').hide();
 		$('.hadouken').finish().show().animate(
@@ -35,3 +36,9 @@ $(document).ready(function() {
 		$('.volume-control').toggleClass("fa-volume-up fa-volume-off")
 	});
 });
+
+function playHadouken () {
+		$('#hadouken-sound')[0].volume = 0.5;
+		$('#hadouken-sound')[0].load();
+		$('#hadouken-sound')[0].play();
+	}
