@@ -62,30 +62,30 @@ body {
 
 .volume-control-container {
 	position: absolute;
-	right: 0;
-	top: 0;
-	width: 20px;
-	height: 20px;
-	background-color: blue;
+	left: 100px;
+	top: 44px;
+	width: 60px;
+	height: 65px;
+	background-color: black;
 	z-index: 2;
 }
 
-.volume-control-container > .container {
+/*.volume-control-container > .container {
 	position: relative;
 	width: 50%;
 	height: 50%;
 	background-color: white;
 	z-index: 3;
-}
+}*/
 
-.container > .absolute-class {
+/*.container > .absolute-class {
 	position: absolute;
 	height: 50%;
 	width: 50%;
 	background-color: black;
 	bottom: 0;
 	right: 0;
-}
+}*/
 
 .volume-control {
 	font-size: 4em !important;
