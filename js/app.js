@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.ryu').on("mouseenter", function() {
-		alert('mouse entered .ryu div');
+		// alert('mouse entered .ryu div');
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
 	});
