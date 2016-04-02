@@ -1,5 +1,10 @@
 $(document).ready(function() {
-	$('.ryu').mouseenter(function() {
-		alert('mouse entered .ryu div');
+	$('.ryu').on("mouseenter", function() {
+		// alert('mouse entered .ryu div');
+		$('.ryu-still').hide();
+		$('.ryu-ready').show();
 	});
+	$('.volume-control').on("click", function() {
+		$('.volume-control').toggleClass("fa-volume-up fa-volume-off")
+	})
 });
