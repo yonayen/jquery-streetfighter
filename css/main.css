@@ -2,35 +2,59 @@
 	outline: red 1px solid;
 }
 
+@font-face{
+	font-family: 'Raleway', sans-serif;
+}
+
 body {
 	background-color: black;
 }
 
+em {
+	font-style: italic;
+}
+
 .main {
-	background-color: white;
+	background: white;
 	margin-top: 110px;
-	padding-left: 100px;
 	min-width: 1200px;
-	height: 500px;
+	padding-left: 100px;
+	min-height: 500px;
 	position: relative;
-	z-index: 1;
 }
 
-.ryu {
-/*	float: left;*/
-	width: 659px;
-	height: 494px;
+.hadouken, .ryu-cool, .ryu-ready, .ryu-still, .ryu-throwing {
+	background-repeat: no-repeat;
+}
+	
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;	
+	height: 90px;
+	position: relative;
+	top: 167px;
+	left: -212px;
+	z-index: 10;
+	float: left;
+	display:none;
 }
 
-.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-container, .ryu {
+	float:left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
 .ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
-}
+}	
 
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');
 }
@@ -43,28 +67,7 @@ body {
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.ryu-cool {
-	background-image: url('../images/ryu-cool.gif');
-}
-
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-	background-repeat: no-repeat;
-}
-
-.hadouken {
-	float: left;
-	background-image: url('../images/hadouken.gif');
-	width: 156px;
-	height: 90px;
-	display: none;
-	float: left;
-	position: absolute;
-	top: 167px;
-	left: 520px;
-	z-index: 10;
-}
-
-.text-content {
+.text-content{
 	position: absolute;
 	left: 650px;
 	height: 425px;
@@ -72,7 +75,9 @@ body {
 	padding-top: 75px;
 }
 
-.sf-logo {
+/* --- STYLING FOR LOGOS --- */
+
+/*.sf-logo {
 	background-image: url('../images/sf-logo.png');
 	width: 682px;
 	height: 314px;
@@ -87,12 +92,21 @@ body {
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
+}*/
+
+.brought-by, .how-to {
+	display: none;
+	color: red;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	width: 600px;
 }
 
 .brought-by {
 	text-align: center;
 	margin-top: 100px;
 }
+
 
 .how-to p {
 	width: 50%;
@@ -101,9 +115,10 @@ body {
 	line-height: 45px;
 }
 
-.how-to p+p {
+.how-to p + p {
 	margin-left: 275px;
 }
+
 
 /* --- VOLUME CONTROL STYLING--- */
 
